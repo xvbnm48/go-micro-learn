@@ -1,13 +1,15 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
-	"net/http"
 
 	"github.com/go-chi/chi/v5"
 )
 
+// routes sets up the routes for the API
 func (app *Config) routes() http.Handler {
 	mux := chi.NewRouter()
 	// specify who is allowed
