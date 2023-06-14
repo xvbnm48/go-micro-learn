@@ -4,6 +4,7 @@ FROM golang:1.18-alpine as builder
 # make directory for the app
 RUN mkdir /app
 
+# copy to app
 COPY . /app
 
 WORKDIR /app
