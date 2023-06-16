@@ -17,6 +17,7 @@ RUN chmod +x /app/brokerApp
 # build a tiny docker image
 FROM alpine:latest
 
+# copy the binary from builder
 RUN mkdir /app
 
 COPY --from=builder /app/brokerApp /app
