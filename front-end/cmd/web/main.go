@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	// for render template
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		render(w, "test.page.gohtml")
 	})
