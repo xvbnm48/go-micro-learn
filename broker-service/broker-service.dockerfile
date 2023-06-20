@@ -22,4 +22,5 @@ RUN mkdir /app
 
 COPY --from=builder /app/brokerApp /app
 
+# run the binary
 CMD [ "/app/brokerApp" ]
