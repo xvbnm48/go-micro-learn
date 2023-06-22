@@ -21,6 +21,7 @@ func main() {
 	}
 }
 
+// func render
 func render(w http.ResponseWriter, t string) {
 
 	partials := []string{
