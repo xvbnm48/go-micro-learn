@@ -10,7 +10,7 @@ func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
 		Message: "Hello from broker-service",
 		Data:    "belum ada data",
 	}
-
+	// for write json
 	_ = app.writeJSON(w, http.StatusOK, payload)
 
 	//out, _ := json.MarshalIndent(payload, "", "\t")
