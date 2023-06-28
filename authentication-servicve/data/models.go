@@ -32,6 +32,8 @@ func New(dbPool *sql.DB) Models {
 		User: User{},
 	}
 }
+
+// get all user
 func (u *User) GetAll() ([]*User, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), dbTimeout)
 	defer cancel()
