@@ -26,6 +26,7 @@ type User struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
+// for dbs
 func New(dbPool *sql.DB) Models {
 	db = dbPool
 	return Models{
