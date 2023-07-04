@@ -5,6 +5,7 @@ import (
 	"database/sql"
 )
 
+// webPort is the port for the web server.
 const webPort = "80"
 
 type Config struct {
