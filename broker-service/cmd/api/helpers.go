@@ -13,6 +13,7 @@ type JsonResponse struct {
 	Data    interface{} `json:"data, omitempty"`
 }
 
+// this is for read json
 func (app *Config) readJSON(w http.ResponseWriter, r *http.Request, data interface{}) error {
 	maxBytes := 1048576 // 1MB
 	r.Body = http.MaxBytesReader(w, r.Body, int64(maxBytes))
