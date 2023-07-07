@@ -11,6 +11,7 @@ const webPort = "80"
 
 type Config struct{}
 
+// starting broker service
 func main() {
 	app := Config{}
 
