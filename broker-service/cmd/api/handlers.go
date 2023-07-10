@@ -5,7 +5,7 @@ import (
 )
 
 func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
-	// payload
+	// payload response
 	payload := JsonResponse{
 		Error:   false,
 		Message: "Hello from broker-service",
