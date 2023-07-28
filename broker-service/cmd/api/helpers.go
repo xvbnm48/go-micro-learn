@@ -33,6 +33,7 @@ func (app *Config) readJSON(w http.ResponseWriter, r *http.Request, data interfa
 
 }
 
+// heloer for write JSON
 func (app *Config) writeJSON(w http.ResponseWriter, status int, data interface{}, headers ...http.Header) error {
 	out, err := json.Marshal(data)
 	if err != nil {
