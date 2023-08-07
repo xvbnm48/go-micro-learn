@@ -31,6 +31,7 @@ func render(w http.ResponseWriter, t string) {
 		"./cmd/web/templates/footer.partial.gohtml",
 	}
 
+	// append templateSlice
 	var templateSlice []string
 	templateSlice = append(templateSlice, fmt.Sprintf("./cmd/web/templates/%s", t))
 
