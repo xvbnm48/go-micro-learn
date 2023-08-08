@@ -1,7 +1,7 @@
 # base go image
 FROM golang:1.18-alpine as builder
 
-# make directory for the app
+# for make directory for the app
 RUN mkdir /app
 
 # copy to app
